@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.Nav{
+  /* border: 2px solid black ; */
+  /* border-radius: 2px; */
+  list-style: none;
+  margin-top: 0%;
+  padding: 0;
+  height: 80px;
+  width: 100%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgb(5, 3, 3);
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top:0;
+  z-index: 1;
+  
+ 
+  
+}
+
+
+ li a {
+  text-decoration: none;
   color: white;
+  background-color: black;
+  font-size: 1rem;
+
+     
+ 
+}
+ li a:focus, li a:hover{
+  color: darkgrey
 }
 
-.App-link {
-  color: #61dafb;
+.Reg{
+  position: relative;
+  left: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Login{
+  position: relative;
+  left: 150px;
+}
+h1{
+  text-align: center;
+  text-shadow: 1px 2px;
+  font-family: monospace;
+  position: relative;
+  top:50px
+}
+.Regform{
+  border: 1px groove aliceblue;
+  background-color: #7E354D;
+  border-radius: 20px;
+  width: 500px;
+  position: relative;
+  left: 520px;
+  margin-top: 100px;
+  box-shadow: 5px 5px 5px ;
+  padding: 20px;
+  
+
+}
+.touch{
+  color: #810541	;
+   position: relative;
+   right: 150px;
+}
+
+.Feed{
+  /* border: 1px groove black; */
+  /* border-radius: 20px; */
+  justify-content: center;
+  list-style: none;
+  width: 40%;
+  height: 100%;
+  position: relative;
+  left: 350px;
+  margin: 20px;
+  padding: 20px;
+  padding-left: 70px;
+  /* background-color: #7E354D */
+  
+  
+}
+
+
+.display{
+  color: #810541	;
+  position: relative;
+  top:200px;
+}
+
+.user{
+  font-family: monospace;
+  background-color: white;
+  color: black;
+  font-size: 2rem;
+}
+.dp{
+  
+border-radius: 10px;
+}
+
+.sidebar{
+height: 700px;
+width:250px;
+
+margin: 0;
+padding :0;
+
+}
+
+.Home{
+ display: flex;
+ flex-direction: row;
+ position: fixed;
+ 
+}
+
+
+.sidebarlist{
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  
+}
+.sidebarlist .row{
+  width: 100%;
+  height: 30px;
+  list-style: none;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+.sidebarlist .row:hover{
+  cursor: pointer;
+  background-color: beige;
+}
+.sidebarlist #active{
+  background-color: beige;
+}
+.row #icon{
+  flex:30%;
+   display: grid;
+   place-items: center;  
+}
+
+.row #title{
+  flex:70%;
+  
+}
+
+.logout{
+  text-align: center;
+  
+  
+}
+.logoutButtons{
+  margin-top: 5%;
+  display: flex;
+  justify-content:center;
+
+}
+
+#but{
+  position: relative;
+  right: 25px;
+}
+
+.More{
+  font-size: larger;
+  color: azure;
+  position: relative;
+  left: 150px;
+  align-items: center;
+  list-style: none;
 }
